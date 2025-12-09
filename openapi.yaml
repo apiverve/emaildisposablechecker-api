@@ -1,0 +1,67 @@
+openapi: 3.0.4
+info:
+  title: Disposable Email Checker
+  description: Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/emaildisposablechecker:
+    get:
+      summary: Check Disposable Email
+      description: Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.
+      operationId: emaildisposablechecker
+      parameters:
+      - name: email
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The email address to check (e.g., support@myspace.com)
+        example: support@myspace.com
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  isDisposable: false
+                  email: support@myspace.com
+                  domain: myspace.com
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
