@@ -1,32 +1,34 @@
 openapi: 3.0.4
 info:
   title: Disposable Email Checker
-  description: Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.
+  description: >-
+    Email Disposable Checker is a simple tool for checking if an email address
+    is disposable. It returns if the email address is disposable or not.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/emaildisposablechecker:
     get:
       summary: Check Disposable Email
-      description: Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.
+      description: Check if an email address is disposable
       operationId: emaildisposablechecker
       parameters:
-      - name: email
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The email address to check (e.g., support@myspace.com)
-        example: support@myspace.com
+        - name: email
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The email address to check (e.g., support@myspace.com)
+          example: support@myspace.com
       responses:
         '200':
           description: Successful Response
@@ -42,11 +44,11 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   isDisposable: false
                   email: support@myspace.com
@@ -56,7 +58,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -64,4 +66,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
