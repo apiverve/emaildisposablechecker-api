@@ -1,17 +1,20 @@
 [project]
 name = "apiverve-disposableemailchecker"
-version = "1.1.12"
+version = "1.1.13"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
 description = "Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not."
-keywords = ["email disposable checker", "email disposable checker api", "email disposable checker tool", "email disposable checker software", "email disposable checker service"]
+keywords = []
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.7"
+license = "MIT"
+dependencies = [
+    "requests>=2.25.0"
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Intended Audience :: Financial and Insurance Industry",
