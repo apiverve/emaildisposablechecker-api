@@ -12,7 +12,6 @@ namespace APIVerve.API.DisposableEmailChecker
     {
         /// <summary>
         /// The email address to check (e.g., support@myspace.com)
-        /// Example: support@myspace.com
         /// </summary>
         [JsonProperty("email")]
         public string Email { get; set; }
