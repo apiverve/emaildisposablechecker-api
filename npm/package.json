@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/emaildisposablechecker",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.",
   "main": "index.js",
   "types": "index.d.ts",
