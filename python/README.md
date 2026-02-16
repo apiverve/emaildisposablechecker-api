@@ -218,8 +218,9 @@ from apiverve_disposableemailchecker.apiClient import EmaildisposablecheckerAPIC
 
 api = EmaildisposablecheckerAPIClient("[YOUR_API_KEY]")
 
+query = { "email": "support@myspace.com" }
+
 try:
-    query = { "email": "support@myspace.com" }
     result = api.execute(query)
     print(result)
 finally:
