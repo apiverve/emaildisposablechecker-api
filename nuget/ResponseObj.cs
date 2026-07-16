@@ -25,17 +25,32 @@ namespace APIVerve.API.DisposableEmailChecker
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
         [JsonProperty("isDisposable")]
-        public bool IsDisposable { get; set; }
+        public bool? IsDisposable { get; set; }
 
         [JsonProperty("email")]
         public string Email { get; set; }
 
         [JsonProperty("domain")]
         public string Domain { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
