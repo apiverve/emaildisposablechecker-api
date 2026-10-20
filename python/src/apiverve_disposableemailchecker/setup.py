@@ -10,14 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_disposableemailchecker',
-    version='1.1.14',
+    version='1.2.2',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
-    description='Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.',
+    description='Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to receive its domain and a true or false flag showing if it is temporary.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://emaildisposablechecker.apiverve.com?utm_source=pypi&utm_medium=homepage',
+    url='https://apiverve.com/marketplace/emaildisposablechecker?utm_source=pypi&utm_medium=referral&utm_content=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
