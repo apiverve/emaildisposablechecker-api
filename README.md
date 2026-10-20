@@ -1,13 +1,13 @@
-# [Disposable Email Checker API](https://emaildisposablechecker.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Disposable Email Checker API](https://apiverve.com/marketplace/emaildisposablechecker?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.
+Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to receive its domain and a true or false flag showing if it is temporary.
 
 The Disposable Email Checker API provides a simple, reliable way to integrate disposable email checker functionality into your applications. Built for developers who need production-ready disposable email checker capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://emaildisposablechecker.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/emaildisposablechecker?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://emaildisposablechecker.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/emaildisposablechecker?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/emaildisposablechecker-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Disposable Email Checker API](https://emaildisposablechecker.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Disposable Email Checker API](https://apiverve.com/marketplace/emaildisposablechecker?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/emaildisposablechecker](https://docs.apiverve.com/ref/emaildisposablechecker)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -222,7 +222,7 @@ A real response from the Disposable Email Checker API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Disposable Email Checker API](https://emaildisposablechecker.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Disposable Email Checker API](https://apiverve.com/marketplace/emaildisposablechecker?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Disposable Email Checker
   description: >-
-    Email Disposable Checker is a simple tool for checking if an email address
-    is disposable. It returns if the email address is disposable or not.
+    Disposable Email Checker is a disposable email detection API that tests
+    whether an email address belongs to a disposable or temp mail provider. Pass
+    any email to receive its domain and a true or false flag showing if it is
+    temporary.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/emaildisposablechecker:
     get:
-      summary: Check Disposable Email
+      summary: Disposable Email Checker
       description: Check if an email address is disposable
       operationId: emaildisposablechecker
       parameters:
