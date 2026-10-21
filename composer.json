@@ -1,7 +1,7 @@
 {
     "name": "apiverve/emaildisposablechecker",
-    "description": "Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.",
-    "version": "1.2.0",
+    "description": "Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to receive its domain and a true or false flag showing if it is temporary.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "emaildisposablechecker",
-        "email disposable checker",
-        "email disposable checker api",
-        "email disposable checker tool",
-        "email disposable checker software",
-        "email disposable checker service"
+        "disposable email checker api",
+        "disposable email api",
+        "disposable email detection api",
+        "temp mail detection api",
+        "temp email checker api"
     ],
-    "homepage": "https://emaildisposablechecker.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/emaildisposablechecker?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/emaildisposablechecker",
