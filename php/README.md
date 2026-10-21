@@ -1,6 +1,6 @@
 # Disposable Email Checker API - PHP Package
 
-Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.
+Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to receive its domain and a true or false flag showing if it is temporary.
 
 ## Installation
 
@@ -83,11 +83,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/emaildisposablechecker?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/emaildisposablechecker?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://emaildisposablechecker.apiverve.com?utm_source=php&utm_medium=readme](https://emaildisposablechecker.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/emaildisposablechecker?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/emaildisposablechecker?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
