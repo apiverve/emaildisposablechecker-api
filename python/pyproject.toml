@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-disposableemailchecker"
-version = "1.2.2"
+version = "1.2.3"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to receive its domain and a true or false flag showing if it is temporary."
+description = "Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to get back the domain parsed from it and a true or false flag showing whether it is temporary. That also makes it a quick way to drop throwaway domains when you derive a company domain from a list of emails."
 keywords = ["disposable email checker api", "disposable email api", "disposable email detection api", "temp mail detection api", "temp email checker api"]
 readme = "README.md"
 requires-python = ">=3.9"
