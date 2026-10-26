@@ -1,7 +1,7 @@
 Disposable Email Checker API
 ============
 
-Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to receive its domain and a true or false flag showing if it is temporary.
+Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to get back the domain parsed from it and a true or false flag showing whether it is temporary. That also makes it a quick way to drop throwaway domains when you derive a company domain from a list of emails.
 
 
 [![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.DisposableEmailChecker.svg)](https://www.nuget.org/packages/APIVerve.API.DisposableEmailChecker)
