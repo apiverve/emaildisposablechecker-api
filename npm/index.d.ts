@@ -25,9 +25,12 @@ declare module '@apiverve/emaildisposablechecker' {
 
 
   interface DisposableEmailCheckerData {
-      isDisposable: boolean | null;
-      email:        null | string;
-      domain:       null | string;
+      isDisposable:   boolean | null;
+      email:          null | string;
+      domain:         null | string;
+      isRelay:        boolean | null;
+      relayService:   null;
+      isDisposableMX: boolean | null;
   }
 
   export default class emaildisposablecheckerWrapper {

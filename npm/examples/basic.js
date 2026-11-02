@@ -15,7 +15,8 @@ const api = new emaildisposablecheckerAPI({
 
 // Example query
 var query = {
-  email: "support@myspace.com"
+  email: "support@myspace.com",
+  domain: "mailinator.com"
 };
 
 // Make the API request using callback

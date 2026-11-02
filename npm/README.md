@@ -57,7 +57,8 @@ Using the API is simple. All you have to do is make a request. The API will retu
 
 ```javascript
 var query = {
-  email: "support@myspace.com"
+  email: "support@myspace.com",
+  domain: "mailinator.com"
 };
 
 api.execute(query, function (error, data) {
@@ -77,7 +78,8 @@ You can also use promises to make requests. The API returns a promise that you c
 
 ```javascript
 var query = {
-  email: "support@myspace.com"
+  email: "support@myspace.com",
+  domain: "mailinator.com"
 };
 
 api.execute(query)
@@ -98,7 +100,8 @@ You can also use async/await to make requests. The API returns a promise that yo
 ```javascript
 async function makeRequest() {
     var query = {
-  email: "support@myspace.com"
+  email: "support@myspace.com",
+  domain: "mailinator.com"
 };
 
     try {
@@ -121,7 +124,10 @@ async function makeRequest() {
   "data": {
     "isDisposable": false,
     "email": "support@myspace.com",
-    "domain": "myspace.com"
+    "domain": "myspace.com",
+    "isRelay": false,
+    "relayService": null,
+    "isDisposableMx": false
   }
 }
 ```
