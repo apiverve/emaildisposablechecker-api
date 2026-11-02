@@ -27,7 +27,10 @@ use APIVerve\Emaildisposablechecker\Client;
 $client = new Client('YOUR_API_KEY');
 
 // Make a request
-$response = $client->execute(['email' => 'support@myspace.com']);
+$response = $client->execute([
+    'email' => 'support@myspace.com',
+    'domain' => 'mailinator.com'
+]);
 
 // Print the response
 print_r($response);
@@ -42,7 +45,7 @@ use APIVerve\Emaildisposablechecker\Exceptions\APIException;
 use APIVerve\Emaildisposablechecker\Exceptions\ValidationException;
 
 try {
-    $response = $client->execute(['email' => 'support@myspace.com']);
+    $response = $client->execute(['email' => 'support@myspace.com', 'domain' => 'mailinator.com']);
     print_r($response['data']);
 } catch (ValidationException $e) {
     echo "Validation error: " . implode(', ', $e->getErrors());
@@ -71,7 +74,10 @@ $client = new Client(
   "data": {
     "isDisposable": false,
     "email": "support@myspace.com",
-    "domain": "myspace.com"
+    "domain": "myspace.com",
+    "isRelay": false,
+    "relayService": null,
+    "isDisposableMx": false
   }
 }
 ```

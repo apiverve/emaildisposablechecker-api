@@ -15,7 +15,7 @@ use APIVerve\Emaildisposablechecker\Exceptions\ValidationException;
  * @example Basic usage
  * ```php
  * $client = new Client('your_api_key');
- * $response = $client->execute(['email' => 'support@myspace.com']);
+ * $response = $client->execute(['email' => 'support@myspace.com', 'domain' => 'mailinator.com']);
  * print_r($response);
  * ```
  *
@@ -34,7 +34,8 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'email' => ['type' => 'string', 'required' => true, 'format' => 'email']
+        'email' => ['type' => 'string', 'required' => false, 'format' => 'email'],
+        'domain' => ['type' => 'string', 'required' => false, 'format' => 'email']
     ];
 
     /**
