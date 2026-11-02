@@ -10,7 +10,7 @@ module APIVerve
     #
     # @example Basic usage
     #   client = APIVerve::Emaildisposablechecker::Client.new(api_key: "your_api_key")
-    #   response = client.execute({ email: "support@myspace.com" })
+    #   response = client.execute({ email: "support@myspace.com", domain: "mailinator.com" })
     #   puts response
     #
     # @see https://apiverve.com/marketplace/emaildisposablechecker?utm_source=ruby&utm_medium=referral&utm_content=readme
@@ -19,7 +19,7 @@ module APIVerve
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'email' => { type: 'string', required: true, format: 'email' } }
+      VALIDATION_RULES = { 'email' => { type: 'string', required: false, format: 'email' }, 'domain' => { type: 'string', required: false, format: 'email' } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {

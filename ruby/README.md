@@ -35,7 +35,10 @@ require 'apiverve_emaildisposablechecker'
 client = APIVerve::Emaildisposablechecker::Client.new(api_key: "YOUR_API_KEY")
 
 # Make a request
-response = client.execute({ email: "support@myspace.com" })
+response = client.execute({
+  email: "support@myspace.com",
+  domain: "mailinator.com"
+})
 
 # Print the response
 puts response
@@ -46,7 +49,7 @@ puts response
 
 ```ruby
 begin
-  response = client.execute({ email: "support@myspace.com" })
+  response = client.execute({ email: "support@myspace.com", domain: "mailinator.com" })
   puts response["data"]
 rescue APIVerve::Emaildisposablechecker::ValidationError => e
   puts "Validation error: #{e.errors.join(', ')}"
@@ -75,7 +78,10 @@ client = APIVerve::Emaildisposablechecker::Client.new(
   "data": {
     "isDisposable": false,
     "email": "support@myspace.com",
-    "domain": "myspace.com"
+    "domain": "myspace.com",
+    "isRelay": false,
+    "relayService": null,
+    "isDisposableMx": false
   }
 }
 ```
