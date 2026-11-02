@@ -40,6 +40,15 @@ namespace APIVerve.API.DisposableEmailChecker
 
         [JsonProperty("domain")]
         public string Domain { get; set; }
+
+        [JsonProperty("isRelay")]
+        public bool? IsRelay { get; set; }
+
+        [JsonProperty("relayService")]
+        public object RelayService { get; set; }
+
+        [JsonProperty("isDisposableMx")]
+        public bool? IsDisposableMx { get; set; }
     }
 
     public partial class Premium
