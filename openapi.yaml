@@ -29,9 +29,20 @@ paths:
           in: query
           schema:
             type: string
-          required: true
-          description: The email address to check (e.g., support@myspace.com)
+          required: false
+          description: >-
+            The email address to check (e.g., support@myspace.com). Send this or
+            domain
           example: support@myspace.com
+        - name: domain
+          in: query
+          schema:
+            type: string
+          required: false
+          description: >-
+            A domain to check instead of a full address (e.g., mailinator.com).
+            Send this or email
+          example: mailinator.com
       responses:
         '200':
           description: Successful Response
@@ -56,6 +67,9 @@ paths:
                   isDisposable: false
                   email: support@myspace.com
                   domain: myspace.com
+                  isRelay: false
+                  relayService: null
+                  isDisposableMx: false
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':

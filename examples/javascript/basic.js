@@ -15,7 +15,8 @@ async function callDisposableEmailCheckerAPI() {
   try {
     // Query parameters
     const params &#x3D; new URLSearchParams({
-            email: &#x27;support@myspace.com&#x27;
+            email: &#x27;support@myspace.com&#x27;,
+            domain: &#x27;mailinator.com&#x27;
         });
 
     const response = await fetch(`${API_URL}?${params}`, {

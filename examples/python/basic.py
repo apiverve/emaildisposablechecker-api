@@ -18,7 +18,7 @@ def call_emaildisposablechecker_api():
     """
     try:
         # Query parameters
-        params &#x3D; {&#x27;email&#x27;: &#x27;support@myspace.com&#x27;}
+        params &#x3D; {&#x27;email&#x27;: &#x27;support@myspace.com&#x27;, &#x27;domain&#x27;: &#x27;mailinator.com&#x27;}
 
         headers = {
             'x-api-key': API_KEY

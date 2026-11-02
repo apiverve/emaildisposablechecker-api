@@ -31,7 +31,8 @@ The Disposable Email Checker API provides a simple, reliable way to integrate di
 async function callDisposableEmailCheckerAPI() {
     try {
         const params = new URLSearchParams({
-            email: 'support@myspace.com'
+            email: 'support@myspace.com',
+            domain: 'mailinator.com'
         });
 
         const response = await fetch(`https://api.apiverve.com/v1/emaildisposablechecker?${params}`, {
@@ -54,7 +55,7 @@ callDisposableEmailCheckerAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/emaildisposablechecker?email=support%40myspace.com" \
+curl -X GET "https://api.apiverve.com/v1/emaildisposablechecker?email=support%40myspace.com&domain=mailinator.com" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -213,7 +214,10 @@ A real response from the Disposable Email Checker API:
   "data": {
     "isDisposable": false,
     "email": "support@myspace.com",
-    "domain": "myspace.com"
+    "domain": "myspace.com",
+    "isRelay": false,
+    "relayService": null,
+    "isDisposableMx": false
   }
 }
 ```

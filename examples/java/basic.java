@@ -15,6 +15,7 @@ public class BasicExample {
             // Query parameters
             Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
         parameters.put(&quot;email&quot;, &quot;support@myspace.com&quot;);
+        parameters.put(&quot;domain&quot;, &quot;mailinator.com&quot;);
 
             // Execute the API request
             APIResponse response = client.execute(parameters);
