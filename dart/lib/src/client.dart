@@ -46,10 +46,11 @@ final _formatPatterns = {
 
 /// Disposable Email Checker API client.
 ///
-/// For more information, visit: https://emaildisposablechecker.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/emaildisposablechecker?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
-/// * [email] (required) - The email address to check (e.g., support@myspace.com) [format: email]
+/// * [email] - The email address to check (e.g., support@myspace.com). Send this or domain [format: email]
+/// * [domain] - A domain to check instead of a full address (e.g., mailinator.com). Send this or email [format: email]
 class EmaildisposablecheckerClient {
   final String apiKey;
   final String baseUrl;
@@ -57,7 +58,8 @@ class EmaildisposablecheckerClient {
 
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
-    'email': ValidationRule(type: 'string', required: true, format: 'email'),
+    'email': ValidationRule(type: 'string', required: false, format: 'email'),
+    'domain': ValidationRule(type: 'string', required: false, format: 'email'),
   };
 
   EmaildisposablecheckerClient(this.apiKey, {

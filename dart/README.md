@@ -1,11 +1,11 @@
 # Disposable Email Checker API - Dart/Flutter Client
 
-Email Disposable Checker is a simple tool for checking if an email address is disposable. It returns if the email address is disposable or not.
+Disposable Email Checker is a disposable email detection API that tests whether an email address belongs to a disposable or temp mail provider. Pass any email to get back the domain parsed from it and a true or false flag showing whether it is temporary. That also makes it a quick way to drop throwaway domains when you derive a company domain from a list of emails.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_emaildisposablechecker.svg)](https://pub.dev/packages/apiverve_emaildisposablechecker)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Disposable Email Checker API](https://emaildisposablechecker.apiverve.com?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Disposable Email Checker API](https://apiverve.com/marketplace/emaildisposablechecker?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_emaildisposablechecker: ^1.1.14
+  apiverve_emaildisposablechecker: ^1.2.4
 ```
 
 Then run:
@@ -34,7 +34,8 @@ void main() async {
 
   try {
     final response = await client.execute({
-      'email': 'support@myspace.com'
+      'email': 'support@myspace.com',
+      'domain': 'mailinator.com'
     });
 
     print('Status: ${response.status}');
@@ -54,19 +55,22 @@ void main() async {
   "data": {
     "isDisposable": false,
     "email": "support@myspace.com",
-    "domain": "myspace.com"
+    "domain": "myspace.com",
+    "isRelay": false,
+    "relayService": null,
+    "isDisposableMx": false
   }
 }
 ```
 
 ## API Reference
 
-- **API Home:** [Disposable Email Checker API](https://emaildisposablechecker.apiverve.com?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/emaildisposablechecker](https://docs.apiverve.com/ref/emaildisposablechecker?utm_source=dart&utm_medium=readme)
+- **API Home:** [Disposable Email Checker API](https://apiverve.com/marketplace/emaildisposablechecker?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/emaildisposablechecker](https://docs.apiverve.com/ref/emaildisposablechecker?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -74,4 +78,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
