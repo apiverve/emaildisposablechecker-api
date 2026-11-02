@@ -43,7 +43,10 @@ from apiverve_disposableemailchecker.apiClient import EmaildisposablecheckerAPIC
 # Initialize the client with your APIVerve API key
 api = EmaildisposablecheckerAPIClient("[YOUR_API_KEY]")
 
-query = { "email": "support@myspace.com" }
+query = {
+    "email": "support@myspace.com",
+    "domain": "mailinator.com"
+}
 
 try:
     # Make the API call
@@ -81,7 +84,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "email": "support@myspace.com" }
+query = {
+    "email": "support@myspace.com",
+    "domain": "mailinator.com"
+}
 ```
 
 ###### Simple Request
@@ -103,7 +109,10 @@ print(result)
   "data": {
     "isDisposable": false,
     "email": "support@myspace.com",
-    "domain": "myspace.com"
+    "domain": "myspace.com",
+    "isRelay": false,
+    "relayService": null,
+    "isDisposableMx": false
   }
 }
 ```
@@ -121,7 +130,10 @@ from apiverve_disposableemailchecker.apiClient import EmaildisposablecheckerAPIC
 
 api = EmaildisposablecheckerAPIClient("[YOUR_API_KEY]")
 
-query = { "email": "support@myspace.com" }
+query = {
+    "email": "support@myspace.com",
+    "domain": "mailinator.com"
+}
 
 try:
     result = api.execute(query)
@@ -142,7 +154,10 @@ from apiverve_disposableemailchecker.apiClient import EmaildisposablecheckerAPIC
 
 api = EmaildisposablecheckerAPIClient("[YOUR_API_KEY]")
 
-query = { "email": "support@myspace.com" }
+query = {
+    "email": "support@myspace.com",
+    "domain": "mailinator.com"
+}
 
 try:
     result = api.execute(query)
@@ -176,7 +191,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_disposableemailchecker.apiClient import EmaildisposablecheckerAPIClient, EmaildisposablecheckerAPIClientError
 
-query = { "email": "support@myspace.com" }
+query = {
+    "email": "support@myspace.com",
+    "domain": "mailinator.com"
+}
 
 # Using context manager ensures proper cleanup
 with EmaildisposablecheckerAPIClient("[YOUR_API_KEY]") as api:
@@ -202,7 +220,10 @@ from apiverve_disposableemailchecker.apiClient import EmaildisposablecheckerAPIC
 # Enable debug mode
 api = EmaildisposablecheckerAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "email": "support@myspace.com" }
+query = {
+    "email": "support@myspace.com",
+    "domain": "mailinator.com"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -217,7 +238,10 @@ from apiverve_disposableemailchecker.apiClient import EmaildisposablecheckerAPIC
 
 api = EmaildisposablecheckerAPIClient("[YOUR_API_KEY]")
 
-query = { "email": "support@myspace.com" }
+query = {
+    "email": "support@myspace.com",
+    "domain": "mailinator.com"
+}
 
 try:
     result = api.execute(query)

@@ -24,7 +24,8 @@ class ValidationError(EmaildisposablecheckerAPIClientError):
 class EmaildisposablecheckerAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "email": {"type": "string", "required": True, "format": "email"}
+        "email": {"type": "string", "required": False, "format": "email"},
+        "domain": {"type": "string", "required": False, "format": "email"}
     }
 
     # Format validation patterns
