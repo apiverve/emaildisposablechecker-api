@@ -19,7 +19,7 @@ module APIVerve
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'email' => { type: 'string', required: false, format: 'email' }, 'domain' => { type: 'string', required: false, format: 'email' } }
+      VALIDATION_RULES = { 'email' => { type: 'string', required: false, format: 'email' }, 'domain' => { type: 'string', required: false, format: 'domain' } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {
