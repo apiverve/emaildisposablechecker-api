@@ -30,7 +30,7 @@ class emaildisposablecheckerWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/emaildisposablechecker';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"email":{"type":"string","required":false,"format":"email"},"domain":{"type":"string","required":false,"format":"email"}};
+        this.validationRules = {"email":{"type":"string","required":false,"format":"email"},"domain":{"type":"string","required":false,"format":"domain"}};
     }
 
     /**
