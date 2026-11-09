@@ -35,7 +35,7 @@ class Client
      */
     private const VALIDATION_RULES = [
         'email' => ['type' => 'string', 'required' => false, 'format' => 'email'],
-        'domain' => ['type' => 'string', 'required' => false, 'format' => 'email']
+        'domain' => ['type' => 'string', 'required' => false, 'format' => 'domain']
     ];
 
     /**
