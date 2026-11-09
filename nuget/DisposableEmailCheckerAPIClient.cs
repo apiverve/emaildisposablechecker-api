@@ -68,7 +68,7 @@ namespace APIVerve.API.DisposableEmailChecker
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
             { "email", new ValidationRule { Type = "string", Required = false, Format = "email" } },
-            { "domain", new ValidationRule { Type = "string", Required = false, Format = "email" } }
+            { "domain", new ValidationRule { Type = "string", Required = false, Format = "domain" } }
         };
 
         /// <summary>Format validation patterns</summary>
