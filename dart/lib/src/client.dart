@@ -50,7 +50,7 @@ final _formatPatterns = {
 ///
 /// Parameters:
 /// * [email] - The email address to check (e.g., support@myspace.com). Send this or domain [format: email]
-/// * [domain] - A domain to check instead of a full address (e.g., mailinator.com). Send this or email [format: email]
+/// * [domain] - A domain to check instead of a full address (e.g., mailinator.com). Send this or email [format: domain]
 class EmaildisposablecheckerClient {
   final String apiKey;
   final String baseUrl;
@@ -59,7 +59,7 @@ class EmaildisposablecheckerClient {
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
     'email': ValidationRule(type: 'string', required: false, format: 'email'),
-    'domain': ValidationRule(type: 'string', required: false, format: 'email'),
+    'domain': ValidationRule(type: 'string', required: false, format: 'domain'),
   };
 
   EmaildisposablecheckerClient(this.apiKey, {
